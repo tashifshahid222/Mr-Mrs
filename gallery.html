@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!-- Google Web Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;500;600&family=Petit+Formal+Script&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="./css/gallery.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <!-- <div id="loader">
+        <dotlottie-player src="https://lottie.host/94c7cdcc-28ff-454a-b5d8-7164ab959afe/hjBj3UziNQ.lottie"
+            background="transparent" speed="1" loop autoplay></dotlottie-player>
+    </div> -->
+
+    <!-- Main content -->
+    <!-- <div id="content"> -->
+        <!-- Navbar start -->
+        <div class="container-fluid sticky-top px-0">
+            <div class="container-fluid">
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl" id="navBar">
+                        <a href="index.html" class="navbar-brand">
+                            <h4 class="text-primary display-6 fw-bold mb-0">Mr<strong
+                                    class="text-secondary">&</strong>Mrs
+                            </h4>
+                        </a>
+                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-primary"></span>
+                        </button>
+                        <div class="collapse navbar-collapse py-3" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto border-top">
+                                <a href="./index.html" class="nav-item nav-link">Home</a>
+                                <a href="./about-us.html" class="nav-item nav-link">About</a>
+                                <!-- <a href="#weddingStory" class="nav-item nav-link">Story</a> -->
+                                <a href="./services.html" class="nav-item nav-link">Service</a>
+                                <a href="./gallery.html" class="nav-item nav-link active">Gallery</a>
+                                <a href="./contact-us.html" class="nav-item nav-link">Contact us</a>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                                <a href="./login.html"
+                                    class="btn btn-primary btn-primary-outline-0 py-2 px-4 ms-4">Login/Register</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Gallery Start -->
+        <div class="container-fluid gallery position-relative py-5" id="weddingGallery">
+            <div class="position-absolute" style="top: -95px; right: 0;">
+                <img src="./images/img/tamp-bg-1.png" class="img-fluid" alt="">
+            </div>
+            <div class="position-absolute" style="top: -80px; left: 0; transform: rotate(150deg);">
+                <img src="./images/img/tamp-bg-1.png" class="img-fluid" alt="">
+            </div>
+            <div class="container position-relative py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h1 class="display-2 text-dark">Wedding Gallery</h1>
+                    <p class="fs-5 text-dark">Step into a world of love and celebration. Our gallery captures the most
+                        magical moments from the weddings we’ve planned—timeless ceremonies, joyful receptions, and
+                        unforgettable memories. Let these images inspire your dream wedding.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100" src="./images/gallery-images/download (1).jfif" alt="">
+                                <div class="hover-style"></div>
+                                <div class="search-icon">
+                                    <a href="./images/gallery-images/download (1).jfif" data-lightbox="Gallery-1"
+                                        class="my-auto"><i
+                                            class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4"
+                                style="border-style: double;">
+                                <h5>Elegant Beach Ceremony</h5>
+                                <p class="text-dark mb-0">June 28, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100"
+                                    src="./images/gallery-images/64b24a12-6bfd-4577-ba3d-a6292cb45056.jfif" alt="">
+                                <div class="hover-style"></div>
+                                <div class="search-icon">
+                                    <a href="./images/gallery-images/64b24a12-6bfd-4577-ba3d-a6292cb45056.jfif"
+                                        data-lightbox="Gallery-2" class="my-auto"><i
+                                            class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4"
+                                style="border-style: double;">
+                                <h5>Romantic Garden Wedding</h5>
+                                <p class="text-dark mb-0">July 15, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100" src="./images/gallery-images/@aleenis.jfif" alt="">
+                                <div class="hover-style"></div>
+                                <div class="search-icon">
+                                    <a href="./images/gallery-images/@aleenis.jfif" data-lightbox="Gallery-3"
+                                        class="my-auto"><i
+                                            class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4"
+                                style="border-style: double;">
+                                <h5>Luxury Ballroom Reception</h5>
+                                <p class="text-dark mb-0">August 20, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100" src="./images/gallery-images/gallery-4.jpg" alt="">
+                                <div class="hover-style"></div>
+                                <div class="search-icon">
+                                    <a href="./images/gallery-images/gallery-4.jpg" data-lightbox="Gallery-4"
+                                        class="my-auto"><i
+                                            class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4"
+                                style="border-style: double;">
+                                <h5>Rustic Barn Wedding</h5>
+                                <p class="text-dark mb-0">September 28, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100" src="./images/gallery-images/gallery-5.jpg" alt="">
+                                <div class="hover-style"></div>
+                                <div class="search-icon">
+                                    <a href="./images/gallery-images/gallery-5.jpg" data-lightbox="Gallery-5"
+                                        class="my-auto"><i
+                                            class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4"
+                                style="border-style: double;">
+                                <h5>Vintage Themed Wedding</h5>
+                                <p class="text-dark mb-0">October 5, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100" src="./images/gallery-images/gallery-6.jpg" alt="">
+                                <div class="hover-style"></div>
+                                <div class="search-icon">
+                                    <a href="./images/gallery-images/gallery-6.jpg" data-lightbox="Gallery-6"
+                                        class="my-auto"><i
+                                            class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4"
+                                style="border-style: double;">
+                                <h5>Fairy Tale Castle Wedding</h5>
+                                <p class="text-dark mb-0">November 12, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100" src="./images/gallery-images/gallery-7.jpg" alt="">
+                                <div class="hover-style"></div>
+                                <div class="search-icon">
+                                    <a href="./images/gallery-images/gallery-7.jpg" data-lightbox="Gallery-7"
+                                        class="my-auto"><i
+                                            class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4"
+                                style="border-style: double;">
+                                <h5>Chic Rooftop Celebration</h5>
+                                <p class="text-dark mb-0">June 28, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100" src="./images/gallery-images/gallery-8.jpg" alt="">
+                                <div class="hover-style"></div>
+                                <div class="search-icon">
+                                    <a href="./images/gallery-images/gallery-8.jpg" data-lightbox="Gallery-8"
+                                        class="my-auto"><i
+                                            class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4"
+                                style="border-style: double;">
+                                <h5>Bohemian Outdoor Wedding</h5>
+                                <p class="text-dark mb-0">January 20, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery end -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5 justify-content-center">
+                    <div class="col-lg-4 text-start">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Links</h4>
+                            <a href="./about-us.html" class="btn-link"> About</a>
+                            <a href="./gallery.html" class="btn-link"> Gallery</a>
+                            <a href="./services.html" class="btn-link"> Service</a>
+                            <a href="./faq.html" class="btn-link"> FAQ</a>
+                            <a href="./contact-us.html" class="btn-link"> Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <div class="footer-item">
+                            <h4 class="mb-4 text-white">Mr<strong class="text-primary">&</strong>Mrs</h4>
+                            <p class="text-white">At Mr&Mrs, we believe every love story deserves to be celebrated in
+                                style.
+                                Our Wedding Gallery is a collection of breathtaking moments from the weddings we’ve
+                                planned—timeless ceremonies, elegant decor, and joyful celebrations. Let these images
+                                inspire your dream wedding and show you what’s possible when love meets creativity.
+                            </p>
+                            <div class="btn-link d-flex justify-content-center">
+                                <a href="#" class="btn btn-md-square btn-light btn-light-outline-0 me-2"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-md-square btn-light btn-light-outline-0 me-2"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-md-square btn-light btn-light-outline-0 me-2"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-md-square btn-light btn-light-outline-0 me-0"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-end">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Follow Us</h4>
+                            <a href="#" class="btn-link"> Faceboock</a>
+                            <a href="#" class="btn-link"> Instagram</a>
+                            <a href="#" class="btn-link"> Twitter</a>
+                            <h4 class="my-4 text-white">Contact Us</h4>
+                            <a href="#" class="btn-link"><i class="fas fa-envelope text-secondary me-2"></i>
+                                info@example.com</a>
+                            <a href="#" class="btn-link"><i class="fas fa-phone text-secondary me-2"></i> (+012) 3456
+                                7890 123</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i
+                class="fa fa-arrow-up"></i></a>
+    <!-- </div> -->
+    <!-- <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> -->
+    <!-- <script>
+        // Hide the loader and show the content after 2.5 seconds
+        setTimeout(function () {
+            document.getElementById('loader').classList.add('hidden');
+            document.getElementById('content').classList.add('visible');
+        }, 2500); // 2500 milliseconds = 2.5 seconds
+    </script> -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

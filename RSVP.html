@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;500;600&family=Petit+Formal+Script&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="./css/rsvp.css">
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <!-- <div id="loader">
+        <dotlottie-player src="https://lottie.host/94c7cdcc-28ff-454a-b5d8-7164ab959afe/hjBj3UziNQ.lottie"
+            background="transparent" loop autoplay></dotlottie-player>
+    </div> -->
+
+    <!-- Main content -->
+    <!-- <div id="content"> -->
+    <!-- Navbar start -->
+    <div class="container-fluid sticky-top px-0">
+        <div class="container-fluid">
+            <div class="container px-0">
+                <nav class="navbar navbar-light navbar-expand-xl" id="navBar">
+                    <a href="index.html" class="navbar-brand">
+                        <h4 class="text-primary display-6 fw-bold mb-0">Mr<strong class="text-secondary">&</strong>Mrs
+                        </h4>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse py-3" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto border-top">
+                            <a href="./index.html" class="nav-item nav-link">Home</a>
+                            <a href="./about-us.html" class="nav-item nav-link">About</a>
+                            <!-- <a href="#weddingStory" class="nav-item nav-link">Story</a> -->
+                            <a href="./services.html" class="nav-item nav-link">Service</a>
+                            <a href="./gallery.html" class="nav-item nav-link">Gallery</a>
+                            <a href="./contact-us.html" class="nav-item nav-link">Contact us</a>
+                        </div>
+                        <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                            <a href="./login.html"
+                                class="btn btn-primary btn-primary-outline-0 py-2 px-4 ms-4">Login/Register</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+    <!-- RSVP Form Start -->
+    <div class="container-fluid RSVP-form py-5" id="weddingRsvp">
+        <div class="container-fluid">
+            <div class="mb-5 text-center mx-auto wow slideInUp fadeIn" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h1 class="display-2">RSVP</h1>
+                <div class="divider mx-auto my-4">
+                    <span class="d-inline-block position-relative">
+                        <i class="fas fa-heart text-primary mx-2" style="font-size: 24px;"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="p-5 position-relative double-border">
+                        <div class="fw-bold text-primary bg-white d-flex align-items-center justify-content-center position-absolute p-2 wow slideInDown fadeIn header-banner"
+                            data-wow-delay="0.1s">
+                            Kindly respond by June 25, 2025 we look forward to celebrating with you!
+                        </div>
+                        <form>
+                            <div class="row gx-4 gy-3">
+                                <div class="col-lg-6 wow slideInLeft fadeIn" data-wow-delay="0.1s">
+                                    <div class="form-group">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control py-3" id="firstName"
+                                            placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow slideInRight fadeIn" data-wow-delay="0.1s">
+                                    <div class="form-group">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control py-3" id="lastName"
+                                            placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow slideInLeft fadeIn" data-wow-delay="0.1s">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control py-3" id="email"
+                                            placeholder="Enter Your Email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow slideInRight fadeIn" data-wow-delay="0.1s">
+                                    <div class="form-group">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control py-3" id="phone"
+                                            placeholder="Enter Your Phone">
+                                    </div>
+                                </div>
+                                <div class="col-12 wow  slideInUp fadeIn" data-wow-delay="0.1s">
+                                    <div class="form-group">
+                                        <label for="guests" class="form-label">Number Of Guests</label>
+                                        <select class="form-control py-3" id="guests">
+                                            <option>Only Me</option>
+                                            <option>02 Guests</option>
+                                            <option>03 Guests</option>
+                                            <option>04 Guests</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow slideInUp fadeIn" data-wow-delay="0.1s">
+                                    <div class="form-group">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea name="text" class="form-control" id="message" cols="30" rows="5"
+                                            placeholder="Share your wishes or any dietary restrictions..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow slideInUp fadeIn" data-wow-delay="0.1s">
+                                    <div class="text-center double-border p-4 my-4 position-relative">
+                                        <div
+                                            class="fw-bold text-primary bg-white d-flex align-items-center justify-content-center position-absolute p-2 attending-banner">
+                                            Will you be attending?
+                                        </div>
+                                        <div class="mt-4">
+                                            <div class="row g-4">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="form-check d-flex">
+                                                            <input class="form-check-input me-2" type="radio"
+                                                                name="attending" id="attending-yes">
+                                                            <label class="form-check-label" for="attending-yes">
+                                                                Accepts With Pleasure!
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="form-check d-flex">
+                                                            <input class="form-check-input me-2" type="radio"
+                                                                name="attending" id="attending-no">
+                                                            <label class="form-check-label" for="attending-no">
+                                                                Declines With Regret
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center wow slideInUp fadeIn" data-wow-delay="0.1s">
+                                    <button type="submit" class="btn btn-primary py-3 px-5">
+                                        <i class="fas fa-paper-plane me-2"></i>Submit RSVP
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RSVP Form End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-4 text-start">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Links</h4>
+                        <a href="./about-us.html" class="btn-link"> About</a>
+                        <a href="./gallery.html" class="btn-link"> Gallery</a>
+                        <a href="./services.html" class="btn-link"> Service</a>
+                        <a href="./faq.html" class="btn-link">FAQ</a>
+                        <a href="./contact-us.html" class="btn-link"> Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="footer-item">
+                        <h4 class="mb-4 text-white">Mr<strong class="text-primary">&</strong>Mrs</h4>
+                        <p class="text-white">At Mr&Mrs, we believe every love story deserves to be celebrated
+                            in style.
+                            Our Wedding Gallery is a collection of breathtaking moments from the weddings we’ve
+                            planned—timeless ceremonies, elegant decor, and joyful celebrations. Let these
+                            images
+                            inspire your dream wedding and show you what’s possible when love meets creativity.
+                        </p>
+                        <div class="btn-link d-flex justify-content-center">
+                            <a href="#" class="btn btn-md-square btn-light btn-light-outline-0 me-2"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-md-square btn-light btn-light-outline-0 me-2"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-md-square btn-light btn-light-outline-0 me-2"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn btn-md-square btn-light btn-light-outline-0 me-0"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Follow Us</h4>
+                        <a href="#" class="btn-link"> Faceboock</a>
+                        <a href="#" class="btn-link"> Instagram</a>
+                        <a href="#" class="btn-link"> Twitter</a>
+                        <h4 class="my-4 text-white">Contact Us</h4>
+                        <a href="#" class="btn-link"><i class="fas fa-envelope text-secondary me-2"></i>
+                            mr&mrs@gmail.com</a>
+                        <a href="#" class="btn-link"><i class="fas fa-phone text-secondary me-2"></i> +1
+                            555-555-5556</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+    <!-- </div> -->
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!-- Bootstrap JS and WOW.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> -->
+    <script>
+        // Hide the loader and show the content after 2.5 seconds
+        // setTimeout(function () {
+        //     document.getElementById('loader').classList.add('hidden');
+        //     document.getElementById('content').classList.add('visible');
+        // }, 2500); // 2500 milliseconds = 2.5 seconds
+
+        // Initialize WOW.js
+        new WOW().init();
+
+        // Form validation
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Basic validation
+                let isValid = true;
+                const firstName = document.getElementById('firstName');
+                const lastName = document.getElementById('lastName');
+                const email = document.getElementById('email');
+                const attending = document.querySelector('input[name="attending"]:checked');
+
+                // Reset any previous error styling
+                [firstName, lastName, email].forEach(field => {
+                    field.classList.remove('is-invalid');
+                });
+
+                // Validate required fields
+                if (!firstName.value.trim()) {
+                    firstName.classList.add('is-invalid');
+                    isValid = false;
+                }
+
+                if (!lastName.value.trim()) {
+                    lastName.classList.add('is-invalid');
+                    isValid = false;
+                }
+
+                if (!email.value.trim() || !email.value.includes('@')) {
+                    email.classList.add('is-invalid');
+                    isValid = false;
+                }
+
+                if (!attending) {
+                    // Highlight the attending section
+                    document.querySelector('.attending-banner').style.color = '#dc3545';
+                    isValid = false;
+                } else {
+                    document.querySelector('.attending-banner').style.color = '';
+                }
+
+                if (isValid) {
+                    // Show success message (in a real application, you would submit the form)
+                    const successMessage = document.createElement('div');
+                    successMessage.className = 'alert alert-success mt-4 text-center';
+                    successMessage.innerHTML = '<h4>Thank You!</h4><p>Your RSVP has been successfully submitted.</p>';
+
+                    form.style.display = 'none';
+                    form.parentNode.appendChild(successMessage);
+
+                    // Scroll to success message
+                    successMessage.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
