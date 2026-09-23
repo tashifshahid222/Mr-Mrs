@@ -65,10 +65,17 @@ let seconds = 60;
 
 // Function to update the timer display
 function updateTimer() {
-    document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
-    document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
-    document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
-    document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+    const daysEl = document.getElementById("days");
+    const hoursEl = document.getElementById("hours");
+    const minutesEl = document.getElementById("minutes");
+    const secondsEl = document.getElementById("seconds");
+
+    if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
+
+    daysEl.innerHTML = days < 10 ? "0" + days : days;
+    hoursEl.innerHTML = hours < 10 ? "0" + hours : hours;
+    minutesEl.innerHTML = minutes < 10 ? "0" + minutes : minutes;
+    secondsEl.innerHTML = seconds < 10 ? "0" + seconds : seconds;
 }
 
 // Function to decrement the timer
@@ -112,11 +119,11 @@ function startTimer() {
     }, 1000);
 }
 
-// Initialize the timer display
-updateTimer();
-
-// Start the timer
-startTimer();
+// Initialize the timer display (only if the countdown exists on this page)
+if (document.getElementById("days")) {
+    updateTimer();
+    startTimer();
+}
 
 
 
@@ -126,8 +133,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Set minimum date to today
     const weddingDateInput = document.getElementById("weddingDate");
-    const today = new Date().toISOString().split("T")[0];
-    weddingDateInput.min = today;
+    if (weddingDateInput) {
+        weddingDateInput.min = new Date().toISOString().split("T")[0];
+    }
+
+    if (!form) return;
 
     // Form validation
     function validateForm() {
@@ -225,15 +235,20 @@ function resetForm() {
     const form = document.getElementById("contactForm");
     const successMessage = document.getElementById("successMessage");
 
+    if (!form || !successMessage) return;
+
     form.reset();
     form.style.display = "flex";
     successMessage.classList.add("hidden");
 }
 
 // Phone number formatting (only numbers, no () or -)
-document.getElementById("phone").addEventListener("input", (e) => {
-    e.target.value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
-});
+const phoneInput = document.getElementById("phone");
+if (phoneInput) {
+    phoneInput.addEventListener("input", (e) => {
+        e.target.value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
+    });
+}
 
 
 document.addEventListener("DOMContentLoaded", function () {
